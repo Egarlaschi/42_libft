@@ -6,16 +6,16 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/18 14:59:21 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/19 12:35:26 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/20 12:36:45 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	*ft_bzero(void *s, size_t n)
 {
-	unsigned char *ptr;
+	unsigned char	*ptr;
 
 	ptr = (unsigned char *)s;
-	while(n > 0)
+	while (n > 0)
 	{
 		*ptr = 0;
 		ptr++;

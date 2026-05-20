@@ -6,22 +6,22 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 13:00:38 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/19 13:25:35 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/20 12:40:52 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-void *ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char *d;
-	unsigned char *s;
+	unsigned char	*d;
+	unsigned char	*s;
 
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
 	if (d < s)
 	{
-		while(n > 0)
+		while (n > 0)
 		{
 			*d = *s;
 			n--;
@@ -31,7 +31,7 @@ void *ft_memmove(void *dest, const void *src, size_t n)
 	}
 	else if (d > s)
 	{
-		while(0 <= n)
+		while (0 <= n)
 		{
 			n--;
 			d[n] = s[n];

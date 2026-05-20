@@ -6,21 +6,20 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 15:15:25 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/19 16:44:50 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/20 12:43:08 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	src_len;
 
 	src_len = ft_strlen(src);
-	if(dstsize == 0)
+	if (dstsize == 0)
 	{
-		return(src_len);
+		return (src_len);
 	}
-
-	while(*src != '\0' && dstsize > 1)
+	while (*src != '\0' && dstsize > 1)
 	{
 		*dst = *src;
 		dst++;
@@ -28,5 +27,5 @@ size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		dstsize--;
 	}
 	*dst = '\0';
-	return(src_len);
+	return (src_len);
 }

@@ -6,13 +6,13 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 17:18:30 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/19 17:23:15 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/20 12:50:13 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int	c)
+int	ft_toupper(int c)
 {
-	if(c >= 'a' && c <= 'z')
+	if (c >= 'a' && c <= 'z')
 		return (c + 'A' - 'a');
-	return(c);
+	return (c);
 }

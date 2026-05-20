@@ -6,13 +6,13 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 17:18:30 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/19 17:24:59 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/20 12:42:26 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
-	if(c >= 'A' && c <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 		return (c + 'a' - 'A');
-	return(c);
+	return (c);
 }
