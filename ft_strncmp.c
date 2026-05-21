@@ -6,7 +6,7 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/20 14:44:25 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/20 15:22:54 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/21 13:56:24 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,3 +47,4 @@ int	main(int argc, char **argv)
 	printf("ft_strncmp = %d", res);
 	return (0);
 }
+*/
