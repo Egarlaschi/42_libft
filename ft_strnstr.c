@@ -6,7 +6,7 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/21 12:56:36 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/21 13:13:15 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/21 13:15:39 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		i++;
 		j = 0;
 	}
-	return (0);
+	return (NULL);
 }
