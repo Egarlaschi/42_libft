@@ -6,18 +6,18 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/21 12:43:15 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/21 12:52:55 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/21 12:54:54 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t		i;
-	const char	*str1;
-	const char	*str2;
+	size_t			i;
+	const unsigned char	*str1;
+	const unsigned char	*str2;
 
-	str1 = (const char *) s1;
-	str2 = (const char *) s2;
+	str1 = (const unsigned char *) s1;
+	str2 = (const unsigned char *) s2;
 	i = 0;
 	while(i < n)
 	{
