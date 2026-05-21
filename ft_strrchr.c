@@ -32,5 +32,5 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	if (s[i] == cc)
 		return ((char *)&s[i]);
-	return (NULL);
+	return (res);
 }
