@@ -6,15 +6,13 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 11:39:40 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/25 13:50:55 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/25 17:54:00 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-// a quanto pare ft_split e una ammazzata ora sono le 11:40 vediamo
-// quando finisco.
 
 static int	is_sep(char c, char sep)
 {
-	return(c == sep);
+	return (c == sep);
 }
 
 static size_t	word_count(const char *s, char sep)
@@ -28,7 +26,7 @@ static size_t	word_count(const char *s, char sep)
 	{
 		while (s[i] == sep)
 			i++;
-		if(s[i] == '\0')
+		if (s[i] == '\0')
 			break;
 		count++;
 		while (s[i] && s[i] != sep)
@@ -39,7 +37,7 @@ static size_t	word_count(const char *s, char sep)
 
 static void	*free_all(char **res, int i)
 {
-	while(i >= 0)
+	while (i >= 0)
 		free(res[i--]);
 	free(res);
 	return (NULL);
@@ -53,7 +51,7 @@ static char	*alloc_word(const char *str, char sep)
 
 	i = 0;
 	len = 0;
-	while(str[len] && !is_sep(str[len], sep))
+	while (str[len] && !is_sep(str[len], sep))
 		len++;
 	word = malloc(sizeof(char) * (len + 1));
 	if (!word)
@@ -64,7 +62,7 @@ static char	*alloc_word(const char *str, char sep)
 		i++;
 	}
 	word[len] = '\0';
-	return(word);
+	return (word);
 }
 
 char	**ft_split(char const *s, char c)

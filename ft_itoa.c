@@ -6,7 +6,7 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 14:09:20 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/25 14:34:37 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/25 17:55:42 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char	*ft_itoa(int n)
 		d++;
 	}
 	s = malloc(sizeof(char) * (d + 1));
-	if(!s)
+	if (!s)
 		return (NULL);
 	s[d] = '\0';
 	d -= 1;
