@@ -1,33 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/18 14:21:33 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/25 10:51:37 by egarlasc         ###   ########.fr       */
+/*   Created: 2026/05/25 10:50:39 by egarlasc          #+#    #+#             */
+/*   Updated: 2026/05/25 11:07:30 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-size_t	ft_strlen(const char *s)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int	i;
+	size_t	i;
+	size_t	j;
+	char	*res;
 
 	i = 0;
-	while (s[i] != '\0')
+	j = 0;
+	if (!s1 || !s2)
+		return (NULL);
+	res = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2)) + 1);
+	if (res == NULL)
+		return (NULL);
+	while (s1[i])
+	{
+		res[i] = s1[i];
 		i++;
-	return (i);
+	}
+	while (s2[j])
+	{
+		res[i] = s2[j];
+		i++;
+		j++;
+	}
+	res[i] = '\0';
+	return (res);
 }
-
-/*
-int	main(int argc, char **argv)
-{
-	if (argc < 2)
-		return (1);
-	printf("ft_strlen = %d", ft_strlen(argv[1]));
-	return (0);
-}
-*/

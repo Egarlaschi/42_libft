@@ -6,7 +6,7 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 13:00:38 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/20 12:40:52 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/25 11:04:54 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,5 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			d[n] = s[n];
 		}
 	}
-	return(dest)
+	return (dest);
 }
