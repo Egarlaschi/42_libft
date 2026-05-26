@@ -6,7 +6,7 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 15:15:56 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/26 15:27:52 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/26 16:43:40 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,5 @@ t_list	*ft_lstnew(void *content)
 		return (NULL);
 	ptr->content = content;
 	ptr->next = NULL;
-	return(ptr);
+	return (ptr);
 }

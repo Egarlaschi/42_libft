@@ -1,19 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/26 15:28:15 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/26 16:42:23 by egarlasc         ###   ########.fr       */
+/*   Created: 2026/05/26 16:44:04 by egarlasc          #+#    #+#             */
+/*   Updated: 2026/05/26 16:56:45 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+int	ft_lstsize(t_list *lst)
 {
-	if (!lst)
-		return ;
-	new->next = *lst;
-	*lst = new;
+	int		len;
+
+	len = 0;
+	while (lst)
+	{
+		lst = lst->next;
+		len++;
+	}
+	return (len);
 }

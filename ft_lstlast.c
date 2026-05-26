@@ -1,19 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/26 15:28:15 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/26 16:42:23 by egarlasc         ###   ########.fr       */
+/*   Created: 2026/05/26 16:54:37 by egarlasc          #+#    #+#             */
+/*   Updated: 2026/05/26 17:00:00 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)
-		return ;
-	new->next = *lst;
-	*lst = new;
+		return (NULL);
+	while (lst->next)
+	{
+		lst = lst->next;
+	}
+	return (lst);
 }
