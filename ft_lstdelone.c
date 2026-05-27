@@ -1,24 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: egarlasc <egarlasc@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/27 15:07:13 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/27 15:14:39 by egarlasc         ###   ########.fr       */
+/*   Created: 2026/05/27 15:35:01 by egarlasc          #+#    #+#             */
+/*   Updated: 2026/05/27 15:46:27 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstdelone(t_list *lst, void (*del) (void *))
 {
-	t_list	*last;
-
-	if (!lst || !new)
+	if (!del || !lst)
 		return ;
-	last = ft_lstlast(*lst);
-	if (!last)
-		*lst = new;
-	else
-		last->next = new;
+	del(lst->content);
+	free(lst);
 }
