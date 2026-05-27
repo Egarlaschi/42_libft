@@ -6,11 +6,11 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 14:09:20 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/25 17:55:42 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/27 17:01:05 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 static int	count_digits(long int n)
 {

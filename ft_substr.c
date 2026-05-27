@@ -6,9 +6,11 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/21 15:23:04 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/21 15:54:57 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/27 17:08:08 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

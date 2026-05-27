@@ -6,11 +6,11 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/18 14:21:33 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/25 10:51:37 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/27 17:06:53 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {
@@ -21,13 +21,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-
-/*
-int	main(int argc, char **argv)
-{
-	if (argc < 2)
-		return (1);
-	printf("ft_strlen = %d", ft_strlen(argv[1]));
-	return (0);
-}
-*/

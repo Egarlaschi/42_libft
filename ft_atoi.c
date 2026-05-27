@@ -6,9 +6,11 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/21 13:16:00 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/21 13:59:59 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/27 16:59:13 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {

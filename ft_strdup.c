@@ -6,11 +6,11 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/21 15:11:34 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/21 15:19:14 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/27 17:05:51 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {

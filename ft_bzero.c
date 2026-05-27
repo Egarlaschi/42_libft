@@ -6,9 +6,11 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/18 14:59:21 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/26 17:35:28 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/27 16:59:30 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

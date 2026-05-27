@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: egarlasc <egarlasc@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/26 14:35:07 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/26 14:35:21 by egarlasc         ###   ########.fr       */
+/*   Created: 2026/05/27 16:39:28 by egarlasc          #+#    #+#             */
+/*   Updated: 2026/05/27 16:56:09 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,19 @@
 static size_t	count_words(char const *s, char c)
 {
 	size_t	count;
-	int		in_word;
+	int		i;
 
 	count = 0;
-	in_word = 0;
-	while (*s)
+	i = 0;
+	while (s[i])
 	{
-		if (*s != c && !in_word)
-		{
-			in_word = 1;
-			count++;
-		}
-		else if (*s == c)
-			in_word = 0;
-		s++;
+		while (s[i] == c)
+			i++;
+		if (!s[i])
+			break ;
+		count++;
+		while (s[i] && s[i] == c)
+			i++;
 	}
 	return (count);
 }
@@ -61,9 +60,12 @@ static char	**fill_array(char const *s, char c, char **strs)
 			while (s[len] && s[len] != c)
 				len++;
 			strs[i] = ft_substr(s, 0, len);
-			if (!strs[i++])
+			if (!strs[i])
+			{
 				return (free_array(strs, i - 1));
-			s += len;
+				i++;
+			}
+			s = s + len;
 		}
 		else
 			s++;

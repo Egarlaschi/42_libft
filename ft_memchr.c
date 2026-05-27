@@ -6,9 +6,11 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/21 12:33:45 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/21 13:55:42 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/27 17:03:03 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

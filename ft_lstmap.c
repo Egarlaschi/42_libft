@@ -1,30 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: egarlasc <egarlasc@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/26 14:58:29 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/27 17:04:58 by egarlasc         ###   ########.fr       */
+/*   Created: 2026/05/27 16:15:57 by egarlasc          #+#    #+#             */
+/*   Updated: 2026/05/27 17:02:26 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	ft_putnbr_fd(int n, int fd)
-{
-	long	nb;
-	char	c;
-
-	nb = n;
-	if (nb < 0)
-	{
-		nb = -nb;
-		write(fd, '-', 1);
-	}
-	if (nb > 9)
-		ft_putnbr(nb / 10);
-	c = (nb % 10) + '0';
-	write(fd, &c, 1);
-}

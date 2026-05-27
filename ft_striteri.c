@@ -6,9 +6,11 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 14:40:01 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/26 14:46:24 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/27 17:06:02 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

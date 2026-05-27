@@ -6,9 +6,11 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 16:54:37 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/26 17:00:00 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/27 17:02:16 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 t_list	*ft_lstlast(t_list *lst)
 {

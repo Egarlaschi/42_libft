@@ -6,9 +6,11 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 15:28:15 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/26 16:42:23 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/27 17:01:29 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {

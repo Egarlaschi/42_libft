@@ -6,9 +6,11 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 17:12:36 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/25 17:45:51 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/27 17:07:02 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
