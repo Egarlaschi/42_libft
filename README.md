@@ -1,15 +1,3 @@
-Type help for instructions on how to use fish
-egarlasc@c3r6s7 ~/p/42_libft (main)> cd
-egarlasc@c3r6s7 ~> cd Desktop/
-egarlasc@c3r6s7 ~/Desktop> ll
-Permissions Size User     Date Modified Name
-drwxr-xr-x     - egarlasc 28 May 13:48  cao
-drwxr-xr-x     - egarlasc 28 May 12:00  libftvog
-drwxr-xr-x     - egarlasc 28 May 13:37  nnsisamai
-.rw-r--r--   46k egarlasc 26 May 17:20  libft.c
-.rwxr-xr-x  1.1k egarlasc 12 Apr 18:04  PrismLauncher
-.rw-r--r--  9.4k egarlasc 28 May 13:47  README(1).md
-egarlasc@c3r6s7 ~/Desktop> cat README\(1\).md
 *This project has been created as part of the 42 curriculum by egarlasc.*
 
 ---
