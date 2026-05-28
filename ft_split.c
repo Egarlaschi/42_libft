@@ -6,7 +6,7 @@
 /*   By: egarlasc <egarlasc@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 16:39:28 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/27 16:56:09 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/28 13:28:32 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static size_t	count_words(char const *s, char c)
 		if (!s[i])
 			break ;
 		count++;
-		while (s[i] && s[i] == c)
+		while (s[i] && s[i] != c)
 			i++;
 	}
 	return (count);
@@ -61,11 +61,9 @@ static char	**fill_array(char const *s, char c, char **strs)
 				len++;
 			strs[i] = ft_substr(s, 0, len);
 			if (!strs[i])
-			{
-				return (free_array(strs, i - 1));
-				i++;
-			}
+				return (free_array(strs, i));
 			s = s + len;
+			i++;
 		}
 		else
 			s++;
