@@ -6,7 +6,7 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 14:58:29 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/27 17:04:58 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/28 13:00:37 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ void	ft_putnbr_fd(int n, int fd)
 	if (nb < 0)
 	{
 		nb = -nb;
-		write(fd, '-', 1);
+		write(fd, "-", 1);
 	}
 	if (nb > 9)
-		ft_putnbr(nb / 10);
+		ft_putnbr_fd(nb / 10, fd);
 	c = (nb % 10) + '0';
 	write(fd, &c, 1);
 }

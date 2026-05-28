@@ -6,7 +6,7 @@
 /*   By: egarlasc <egarlasc@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 16:07:29 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/27 17:02:05 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/28 12:57:59 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (!lst || !fd)
+	if (!lst || !f)
 		return ;
 	while (lst)
 	{

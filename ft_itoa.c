@@ -6,7 +6,7 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 14:09:20 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/27 17:01:05 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/28 12:36:09 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,20 +56,3 @@ char	*ft_itoa(int n)
 		s[0] = '-';
 	return (s);
 }
-
-/*
-#include <stdio.h>
-
-int	main(int ac, char **av)
-{
-
-    if(ac != 2)
-    {   
-        printf("Numero argomenti errato!\n");
-        return (1);
-    }   
-        
-    printf("%s\n", ft_itoa(atoi(av[1])));
-    return (0);
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: egarlasc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/21 15:23:04 by egarlasc          #+#    #+#             */
-/*   Updated: 2026/05/27 17:08:08 by egarlasc         ###   ########.fr       */
+/*   Updated: 2026/05/28 12:59:37 by egarlasc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	i;
-	char	*str;
-	int		slen;
+	size_t				i;
+	char				*str;
+	unsigned int		slen;
 
 	i = 0;
 	if (!s)
