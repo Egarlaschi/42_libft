@@ -1,5 +1,5 @@
 NAME = libft.a
-AR = ar rc
+AR = ar rcs
 RM = rm -f
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
@@ -59,25 +59,25 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	@$(AR) $(NAME) $(OBJS)
-	@echo "$(GREEN)·▄▄▄▄   ▄▄▄·  ▐▄▄▄▄▄▄ .    ·▄▄▄      ▄▄▄  ▄▄▄▄▄▄▄▄ .$(RESET)"
-	@echo "$(GREEN)██▪ ██ ▐█ ▀█   ·██▀▄.▀·    ▐▄▄·▪     ▀▄ █·•██  ▀▄.▀·$(RESET)"
-	@echo "$(GREEN)▐█· ▐█▌▄█▀▀█ ▪▄ ██▐▀▀▪▄    ██▪  ▄█▀▄ ▐▀▀▄  ▐█.▪▐▀▀▪▄$(RESET)"
-	@echo "$(GREEN)██. ██ ▐█ ▪▐▌▐▌▐█▌▐█▄▄▌    ██▌.▐█▌.▐▌▐█•█▌ ▐█▌·▐█▄▄▌$(RESET)"
-	@echo "$(GREEN)▀▀▀▀▀•  ▀  ▀  ▀▀▀• ▀▀▀     ▀▀▀  ▀█▄▀▪.▀  ▀ ▀▀▀  ▀▀▀ $(RESET)"
-	@echo ""
-	@echo "$(GREEN)✓ $(NAME) creato con successo!$(RESET)"
+	@printf "$(GREEN)·▄▄▄▄   ▄▄▄·  ▐▄▄▄▄▄▄ .     ·▄▄▄      ▄▄▄  ▄▄▄▄▄▄▄▄ .$(RESET)\n"
+	@printf "$(GREEN)██▪ ██ ▐█ ▀█   ·██▀▄.▀·    ▐▄▄·▪     ▀▄ █·•██  ▀▄.▀·$(RESET)\n"
+	@printf "$(GREEN)▐█· ▐█▌▄█▀▀█ ▪▄ ██▐▀▀▪▄    ██▪  ▄█▀▄ ▐▀▀▄  ▐█.▪▐▀▀▪▄$(RESET)\n"
+	@printf "$(GREEN)██. ██ ▐█ ▪▐▌▐▌▐█▌▐█▄▄▌    ██▌.▐█▌.▐▌▐█•█▌ ▐█▌·▐█▄▄▌$(RESET)\n"
+	@printf "$(GREEN)▀▀▀▀▀•  ▀  ▀  ▀▀▀• ▀▀▀     ▀▀▀  ▀█▄▀▪.▀  ▀ ▀▀▀  ▀▀▀ $(RESET)\n"
+	@printf "\n"
+	@printf "$(GREEN)✓ %s creato con successo!$(RESET)\n" "$(NAME)"
 
 %.o: %.c
 	@$(CC) $(CFLAGS) -c $< -o $@
-	@echo "$(BLUE)Compilato:$(RESET) $<"
+	@printf "$(BLUE)Compilato:$(RESET) %s\n" "$<"
 
 clean:
 	@$(RM) $(OBJS)
-	@echo "$(YELLOW)File oggetto rimossi.$(RESET)"
+	@printf "$(YELLOW)File oggetto rimossi.$(RESET)\n"
 
 fclean: clean
 	@$(RM) $(NAME)
-	@echo "$(YELLOW)Eseguibile $(NAME) rimosso.$(RESET)"
+	@printf "$(YELLOW)Eseguibile %s rimosso.$(RESET)\n" "$(NAME)"
 
 re: fclean all
 
